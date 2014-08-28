@@ -13,9 +13,9 @@ import setupinfo
 from setuptools import setup, find_packages
 
 
-version = (0, 6, 1)
+version = (0, 6, 1, 1)
 
-name = "PyAMF"
+name = "PyAMF2"
 description = "AMF support for Python"
 long_description = setupinfo.read('README.txt')
 url = "http://pyamf.org"
