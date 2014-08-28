@@ -67,7 +67,7 @@ source_suffix = '.rst'
 #source_encoding = 'utf-8'
 
 # create content template for the homepage
-readme = rst2html('../README.txt', 'html/intro.html')
+readme = rst2html('../README.rst', 'html/intro.html')
 readme = copyfile('../CHANGES.txt', 'changelog.rst')
 
 # General substitutions.
