@@ -26,7 +26,6 @@ license = "MIT License"
 classifiers = """\
 Framework :: Django
 Framework :: Pylons
-Framework :: Turbogears
 Framework :: Twisted
 Intended Audience :: Developers
 Intended Audience :: Information Technology
