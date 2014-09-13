@@ -11,13 +11,14 @@ use_setuptools(download_delay=3)
 # import ordering is important
 import setupinfo
 from setuptools import setup, find_packages
+import io
 
 
-version = (0, 6, 1, 3)
+version = (0, 6, 1, 4)
 
 name = "PyAMF2"
 description = "AMF support for Python"
-long_description = setupinfo.read('README.rst')
+long_description = io.open('README.rst', "r").read()
 url = "http://pyamf.org"
 author = "The PyAMF Project"
 author_email = "users@pyamf.org"
