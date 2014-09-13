@@ -14,11 +14,11 @@ from setuptools import setup, find_packages
 import io
 
 
-version = (0, 6, 1, 4)
+version = (0, 6, 1, 5)
 
 name = "PyAMF2"
 description = "AMF support for Python"
-long_description = io.open('README.rst', "r").read()
+long_description = description
 url = "http://pyamf.org"
 author = "The PyAMF Project"
 author_email = "users@pyamf.org"
