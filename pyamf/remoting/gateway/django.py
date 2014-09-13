@@ -114,7 +114,7 @@ class DjangoGateway(gateway.BaseGateway):
                 response += "\n\nTraceback:\n\n%s" % gateway.format_exception()
 
             # support for Django 0.96
-            http_response = http.HttpResponse(mimetype='text/plain',
+            http_response = http.HttpResponse(content_type='text/plain',
                 content=response)
 
             http_response.status_code = 400
@@ -132,7 +132,7 @@ class DjangoGateway(gateway.BaseGateway):
             if self.debug:
                 response += "\n\nTraceback:\n\n%s" % gateway.format_exception()
 
-            return http.HttpResponseServerError(mimetype='text/plain',
+            return http.HttpResponseServerError(content_type='text/plain',
                 content=response)
 
         if self.logger:
@@ -153,7 +153,7 @@ class DjangoGateway(gateway.BaseGateway):
             if self.debug:
                 response += "\n\nTraceback:\n\n%s" % gateway.format_exception()
 
-            return http.HttpResponseServerError(mimetype='text/plain',
+            return http.HttpResponseServerError(content_type='text/plain',
                 content=response)
 
         if self.logger:
@@ -174,11 +174,11 @@ class DjangoGateway(gateway.BaseGateway):
                 response += "\n\nTraceback:\n\n%s" % gateway.format_exception()
 
             return http.HttpResponseServerError(
-                mimetype='text/plain', content=response)
+                content_type='text/plain', content=response)
 
         buf = stream.getvalue()
 
-        http_response = http.HttpResponse(mimetype=remoting.CONTENT_TYPE)
+        http_response = http.HttpResponse(content_type=remoting.CONTENT_TYPE)
         http_response['Server'] = gateway.SERVER_NAME
         http_response['Content-Length'] = str(len(buf))
 
