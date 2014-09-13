@@ -17,7 +17,7 @@ version = (0, 6, 1, 2)
 
 name = "PyAMF2"
 description = "AMF support for Python"
-long_description = setupinfo.read('README.txt')
+long_description = setupinfo.read('README.rst')
 url = "http://pyamf.org"
 author = "The PyAMF Project"
 author_email = "users@pyamf.org"
